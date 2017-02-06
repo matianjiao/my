@@ -1,0 +1,1162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica";
+    /*overflow: hidden;*/
+    -webkit-user-select: none;
+    background: #171B1D;
+    min-width: 400px;
+}
+
+/*========welcome==========*/
+.welcome {
+    width: 100%;
+    height: 713px;
+    background: url("../images/w3.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4000;
+}
+
+.huaban {
+    width: 40px;
+    height: 30px;
+    background: url(../images/huaban1.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    z-index: 7;
+}
+
+.zhezhao {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.wenzi {
+    position: absolute;
+    top: 36%;
+    left: 22%;
+    height: 100px;
+    font-size: 50px;
+    color: #ccc;
+}
+
+.xiangshang {
+    height: 50px;
+    font-size: 40px;
+    color: #ccc;
+    position: absolute;
+    left: 40%;
+    top: 500px;
+}
+
+/*=====header  大 ======*/
+/*==中==*/
+.header1, .header2 {
+    color: #C4C4C4;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header1-con {
+    width: 100%;
+    height: 100%;
+    line-height: 57px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header1-col {
+    cursor: pointer;
+}
+
+.header1-col > div:hover {
+    color: #fff;
+}
+
+.header-span {
+    float: right;
+    color: #3D3D3D;
+}
+
+*[data-role="xiangxia"] {
+    font-size: 24px;
+    color: #fff;
+}
+
+/*======header===小=====*/
+.header2-con {
+    width: 96%;
+    text-align: right;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/*========header-right=========*/
+.header2-right {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.header2-right > .row > div[class*=col] {
+    padding: 20px;
+    background: rgba(17, 19, 27, 0.8);
+    border-bottom: 1px dotted #525252;
+    box-shadow: inset;
+}
+
+.header2-right > .row > div[class*=col]:hover {
+    color: #fff;
+}
+
+/*===点击向下的箭头出来的东东====*/
+.sence {
+    perspective: 700px;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+}
+
+.xia1 {
+    background: rgba(27, 28, 29, 0.9);
+    display: none;
+}
+
+.xia-img {
+    padding-bottom: 10px;
+}
+
+.xia-img > div {
+    height: 100px;
+    padding: 10px 20px;
+    background: url(../images/welcome.jpg) no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.xia2 {
+    background: rgba(12, 12, 12, 0.9);
+    transform-origin: top;
+    transition: all ease-in-out .5s;
+    transform: rotateX(-93deg);
+}
+
+.xia-con-zi {
+    cursor: pointer;
+    height: 60px;
+    color: #c4c4c4;
+    text-align: center;
+    line-height: 60px;
+}
+
+.xia-con-zi > div:hover {
+    color: #fff;
+}
+
+/*===========banner==========*/
+.ban {
+    height: 620px;
+    position: relative;
+}
+
+.banzhezhao {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner:nth-child(1) {
+    background: url(../images/ban2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner:nth-child(2) {
+    background: url(../images/ban1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner:nth-child(3) {
+    background: url(../images/welcome.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.info {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 250px;
+    perspective: 200px;
+    transform-style: preserve-3d;
+    text-align: center;
+    z-index: 200;
+}
+
+.self {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #fff;
+    padding: 30px 10px 20px;
+    display: none;
+}
+
+.hellow {
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: mediumpurple;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1200px) {
+    .ban {
+        height: 650px;
+    }
+
+    .info {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ban {
+        height: 670px;
+    }
+
+    .info {
+        width: 300px;
+    }
+}
+
+/*========小轮播=======*/
+.hengimg {
+    margin: 30px 0;
+    border: 1px dotted #656565;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item {
+    height: 200px;
+    width: 280px !important;
+    border-right: 1px dotted #656565;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgs > div:nth-child(1) {
+    background: url("../images/xiao1.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(2) {
+    background: url("../images/xiao2.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(3) {
+    background: url("../images/xiao3.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(4) {
+    background: url("../images/xiao4.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(5) {
+    background: url("../images/xiao5.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(6) {
+    background: url("../images/xiao6.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(7) {
+    background: url("../images/xiao7.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(8) {
+    background: url("../images/xiao8.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(9) {
+    background: url("../images/xiao1.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(10) {
+    background: url("../images/xiao2.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(11) {
+    background: url("../images/xiao3.png") no-repeat center;
+    background-size: contain;
+}
+
+.imgs > div:nth-child(12) {
+    background: url("../images/xiao4.png") no-repeat center;
+    background-size: contain;
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1200px) {
+    .hengimg {
+        margin: 40px 0;
+    }
+
+    .item {
+        height: 220px;
+        width: 300px !important;
+    }
+
+    .hengimg {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hengimg {
+        margin: 50px 0;
+    }
+
+    .item {
+        height: 250px;
+        width: 337px !important;
+    }
+
+    .hengimg {
+        height: 250px;
+    }
+
+}
+
+/*==============照片墙==============*/
+.zuopin {
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 25px;
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin: 40px auto 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.zhaopian {
+    border: 1px solid #656565;
+    border-radius: 4px;
+}
+
+.zhaopian .big {
+    height: 510px;
+    border-right: 1px solid #656565;
+}
+
+.zhaopian .big:nth-child(3) {
+    border-right: none;
+}
+
+.texian {
+    background: url("../images/2.jpg") no-repeat center 0;
+}
+
+.back-cover {
+    background-size: cover;
+}
+
+/*====中====*/
+.zhong {
+    position: relative;
+}
+
+.zhong > div {
+    height: 170px;
+    border-bottom: 1px solid #656565;
+}
+
+.zhong > div:nth-child(1) {
+    background: url("../images/icons1.png") no-repeat center;
+}
+
+.zhong > div:nth-child(2) {
+    background: url("../images/icons3.png") no-repeat center;
+}
+
+.zhong > div:nth-child(3) {
+    border-bottom: none;
+    background: url("../images/icons2.png") no-repeat center;
+}
+
+/*=====右====*/
+.youshang {
+    height: 210px;
+}
+
+.youshang:nth-child(1) {
+    border-right: 1px solid #656565;
+    background: url("../images/ai4.png") no-repeat center;
+    background-size: cover;
+}
+
+.youshang:nth-child(2) {
+    background: url("../images/shou.png") no-repeat center;
+    background-size: contain;
+}
+
+.youxia {
+    height: 300px;
+    border-right: 1px solid #656565;
+    border-top: 1px solid #656565;
+}
+
+.youxia:nth-child(1) {
+    background: url("../images/ai3.png") no-repeat center center;
+    background-size: cover;
+}
+
+.youxia:nth-child(2) {
+    background: url("../images/maike.png") no-repeat center center;
+    background-size: cover;
+}
+
+.youxia:nth-child(3) {
+    border-right: none;
+    background: url("../images/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.youshang, .youxia, .shuzhong {
+    position: relative;
+}
+
+/*照片墙遮罩*/
+.zhezhao1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1200px) {
+    .zuopin {
+        font-size: 27px;
+        width: 150px;
+        height: 70px;
+        line-height: 70px;
+        margin: 45px auto 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .zuopin {
+        font-size: 30px;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        margin: 50px auto 20px;
+    }
+}
+
+/*==小屏时候的照片墙===*/
+.zhaoxiao {
+    border-top: 1px solid #656565;
+}
+
+.icons > div {
+    height: 220px;
+    border-right: 1px solid #656565;
+    border-bottom: 1px solid #656565;
+    position: relative;
+}
+
+.icons > div:nth-child(1) {
+    background: url("../images/icons1.png") no-repeat center center;
+    background-size: contain;
+}
+
+.icons > div:nth-child(2) {
+    background: url("../images/icons3.png") no-repeat center center;
+    background-size: contain;
+}
+
+.icons > div:nth-child(3) {
+    background: url("../images/icons2.png") no-repeat center center;
+    background-size: contain;
+}
+
+.kuantu > div {
+    height: 220px;
+    border-bottom: 1px solid #656565;
+    border-right: 1px solid #656565;
+    position: relative;
+}
+
+.kuantu > div:nth-child(1) {
+    background: url("../images/ai4.png") no-repeat center center;
+    background-size: contain;
+}
+
+.kuantu > div:nth-child(2) {
+    background: url("../images/shou.png") no-repeat center center;
+    background-size: contain;
+}
+
+.gaotu > div {
+    height: 260px;
+    border-bottom: 1px solid #656565;
+    border-right: 1px solid #656565;
+    position: relative;
+}
+
+.gaotu > div:nth-child(1) {
+    background: url("../images/ai3.png") no-repeat center center;
+    background-size: contain;
+}
+
+.gaotu > div:nth-child(2) {
+    background: url("../images/maike.png") no-repeat center center;
+    background-size: contain;
+}
+
+.gaotu > div:nth-child(3) {
+    background: url("../images/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/*==============游戏=================*/
+.zuopin1 {
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin: 40px auto 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.youxi-con {
+    height: 560px;
+    position: relative;
+}
+
+.youxi {
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+
+.youxiyin {
+    display: none;
+}
+
+.dingwei {
+    position: relative;
+}
+
+.huan {
+    position: absolute;
+    bottom: -12%;
+    right: 12%;
+    font-size: 25px !important;
+    color: #999;
+}
+
+.huan:hover {
+    color: #ccc;
+}
+
+.container-fluid > .youxi > div[class*=col] {
+    margin-bottom: 40px;
+    height: 260px;
+    position: relative;
+}
+
+.imgyouxi {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 15px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.35s ease-in-out;
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.imgyouxi a {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto auto;
+}
+.xm1{
+    background: url("../images/gwmm.jpg") no-repeat 42% center;
+}
+.xm2{
+    background: url("../images/tongda.jpg") no-repeat 42% center;
+}
+.xm3{
+    background: url("../images/amaiti.png") no-repeat 42% 30%;
+}
+.xm4{
+    background: url("../images/crm.png") no-repeat 46% 50%;
+}
+.xm5{
+    background: url("../images/crm-new.png") no-repeat 42% 50%;
+}
+.yx1 {
+    background: url("../images/wuziqi.jpg") no-repeat 40% 40%;
+}
+
+.yx2 {
+    background: url("../images/she.jpg") no-repeat center;
+}
+
+.yx3 {
+    background: url("../images/puke.jpg") no-repeat center;
+}
+
+.yx4 {
+    background: url("../images/qq.jpg") no-repeat center;
+}
+
+.yx5 {
+    background: url("../images/daziyouxi.jpg") no-repeat center;
+}
+
+.yx6 {
+    background: url("../images/rili.jpg") no-repeat center;
+}
+
+.yx7 {
+    background: url("../images/xiaomi.jpg") no-repeat center;
+}
+
+.yx8 {
+    background: url("../images/tianmao.jpg") no-repeat center;
+}
+
+.yx9 {
+    background: url("../images/dazi.png") no-repeat center;
+}
+
+.yx10 {
+    background: url("../images/huaban.jpg") no-repeat center;
+}
+
+.yx11 {
+    background: url("../images/jishiben.png") no-repeat 30% 32%;
+}
+
+.yx12 {
+    background: url("../images/jisuanqi.png") no-repeat center;
+}
+
+.yx13 {
+    background: url("../images/apple.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.yx14 {
+    background: url("../images/jishiben.png") no-repeat 40% center;
+}
+
+.yx15 {
+    background: url("../images/yuan1.png") no-repeat center 40%;
+}
+
+.yx16 {
+    background: url("../images/yuan5.png") no-repeat center 40%;
+}
+
+.hudie {
+    width: 280px;
+    height: 200px;
+    background: url("../images/hudie.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateZ(60deg);
+}
+
+.xiangzuo, .xiangyou {
+    width: 80px;
+    height: 80px;
+    color: #444;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 40px !important;
+    transition: all ease-in-out 0.35s;
+}
+
+.xiangzuo {
+    left: 0;
+}
+.xiangyou {
+    right: 0;
+}
+.xiangzuo:hover, .xiangyou:hover {
+    color: #cccccc;
+}
+.yuanzhao {
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto;
+    background: rgba(13, 13, 13, 1);
+    color: #fff;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 262px;
+    font-size: 24px;
+    transform: scale(0.5, 0.5);
+    transition: all 0.35s ease-in-out;
+}
+
+.fangda {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+}
+
+.smallcir {
+    transform: scale(1, 1);
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1200px) {
+    .zuopin1 {
+        font-size: 27px;
+        width: 210px;
+        height: 70px;
+        line-height: 70px;
+        margin: 45px auto 20px;
+    }
+
+    .imgyouxi {
+        width: 250px;
+        height: 250px;
+    }
+
+    .container-fluid > .youxi > div[class*=col] {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .zuopin1 {
+        font-size: 30px;
+        width: 250px;
+        height: 80px;
+        line-height: 80px;
+        margin: 50px auto 40px;
+    }
+
+    .imgyouxi {
+        width: 260px;
+        height: 260px;
+    }
+
+    .container-fluid > .youxi > div[class*=col] {
+        margin-bottom: 40px;
+    }
+
+}
+
+/*=========关于我=======*/
+.aboutbag {
+    transition: all 0.35s ease-in-out;
+    background: url("../images/about.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.about {
+    text-align: center;
+    color: #fff;
+}
+
+.about > div {
+    font-family: "微软雅黑";
+    font-weight: 100;
+    height: 380px;
+    border-right: 1px dotted #B5B5B5;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: #DEDEDE;
+    margin: 20px;
+}
+
+p span {
+    font-size: 22px;
+    color: #E5E5E5;
+    display: block;
+}
+
+.myphoto {
+    width: 240px;
+    height: 240px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: url("../images/me.jpg") 40% 5%;
+    background-size: cover;
+}
+
+.aihao span {
+    font-size: 30px;
+    display: inline-block;
+    padding: 20px;
+    color: #F3F3F3;
+}
+
+@media screen and (min-width: 800px ) and (max-width: 1200px) {
+    .about > div {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about > div {
+        height: 400px;
+    }
+}
+
+/*=========联系我=======*/
+.aboutbag1 {
+    transition: all 2s ease-in-out;
+    padding: 210px;
+    position: relative;
+}
+
+.about1 {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.fang {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #fff;
+    transform: rotatez(45deg);
+    margin: 0 auto;
+}
+
+.about1 .xinxi {
+    color: #F3F3F3;
+    height: 100px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.xinxi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto auto;
+
+}
+
+.about1 .lianxi {
+    font-size: 30px;
+}
+
+.taoxin {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    background: url("../images/taoxin.png");
+    background-size: cover;
+    transition: all 2s ease-in-out;
+    animation: taoxin 2s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.taoxin1 {
+    top: -4%;
+    left: 0;
+    transform: rotateY(-180deg);
+}
+
+.taoxin2 {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 45%;
+}
+
+.taoxin3 {
+    top: -7%;
+    right: 0%;
+}
+
+.taoxin4 {
+    bottom: 3%;
+    left: 0%;
+    transform: rotateZ(180deg);
+}
+
+.taoxin5 {
+    bottom: 3%;
+    right: 0%;
+    transform: rotateX(180deg);
+}
+
+.border-none {
+    border: none !important;
+}
+
+@keyframes taoxin {
+
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    color: #999;
+    transform: rotateZ(90deg);
+    font-size: 30px !important;
+    display: none;
+    z-index: 4;
+}
+
+@media screen and (min-width: 1200px) {
+    .top {
+        font-size: 40px !important;
+        bottom: 20px;
+    }
+}
+
+/*各种屏幕适配*/
+@media screen and (min-width: 1920px) {
+    .ban {
+        height: 1000px;
+    }
+
+    .zhaopian .big {
+        height: 780px;
+    }
+
+    .youshang {
+        height: 360px;
+    }
+
+    .youxia {
+        height: 420px;
+    }
+
+    .zhong > div {
+        height: 260px;
+    }
+
+    .youxi-con {
+        height: 710px;
+    }
+
+    .about {
+        padding: 180px;
+    }
+
+    .aboutbag1 {
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1910px) {
+    .ban {
+        height: 1000px;
+    }
+
+    .zhaopian .big {
+        height: 760px;
+    }
+
+    .youshang {
+        height: 340px;
+    }
+
+    .youxia {
+        height: 420px;
+    }
+
+    .zhong > div {
+        height: 253px;
+    }
+
+    .youxi-con {
+        height: 710px;
+    }
+
+    .about {
+        padding: 180px;
+    }
+
+    .aboutbag1 {
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width:1590px) {
+    .ban {
+        height: 910px;
+    }
+
+    .zhaopian .big {
+        height: 720px;
+    }
+
+    .youshang {
+        height: 320px;
+    }
+
+    .youxia {
+        height: 400px;
+    }
+
+    .zhong > div {
+        height: 240px;
+    }
+
+    .youxi-con {
+        height: 700px;
+    }
+
+    .about {
+        padding: 160px;
+    }
+
+    .aboutbag1 {
+        height: 750px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width:1430px) {
+    .ban {
+        height: 770px;
+    }
+
+    .zhaopian .big {
+        height: 600px;
+    }
+
+    .youshang {
+        height: 240px;
+    }
+
+    .youxia {
+        height: 360px;
+    }
+
+    .zhong > div {
+        height: 200px;
+    }
+
+    .youxi-con {
+        height: 550px;
+    }
+
+    .about {
+        padding: 100px;
+    }
+
+    .aboutbag1 {
+        height: 620px;
+    }
+}
+

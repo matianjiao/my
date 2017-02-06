@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../jQuery图片九宫格样式鼠标悬停图片滑动切换效果_素材中国17素材网_files" />
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../www.17sucai.com" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
